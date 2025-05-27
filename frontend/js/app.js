@@ -138,10 +138,10 @@ function renderTasks(tasks) {
             <p>${task.description || 'No description'}</p>
             <p class="due-date">Due: ${task.due_date || 'No due date'}</p>
             <div class="actions">
-                <button class="complete-btn" data-id="${task.id}">
+                <button class="complete-btn btn-success" data-id="${task.id}">
                     ${task.status === 'Complete' ? 'Mark Open' : 'Mark Complete'}
                 </button>
-                <button class="delete-btn" data-id="${task.id}">Delete</button>
+                <button class="delete-btn btn-danger" data-id="${task.id}">Delete</button>
             </div>
         `;
         taskList.appendChild(taskElement);
